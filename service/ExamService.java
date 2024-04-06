@@ -14,4 +14,8 @@ public class ExamService {
     public List<Exams> getAllStudents(){
         return examRepository.findAll();
     }
+
+    public Exams createExam(Exams exam) {
+        return examRepository.save(exam);
+    }
 }
